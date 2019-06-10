@@ -71,12 +71,12 @@ if(age>20) {
 }
 */
 
-
+/* ---------- if-else function practice 1 ----------
 const title = document.querySelector("#title");
 const BASE_COLOR = "rgb(52, 73, 94)";
 const OTHER_COLOR = "#7f8c8d";
 
-function handlerClick(){
+function handleClick(){
     const currentColor = title.style.color;
     if(currentColor==BASE_COLOR){
         title.style.color = OTHER_COLOR;
@@ -86,7 +86,7 @@ function handlerClick(){
 }
 function init(){
     title.style.color = BASE_COLOR;
-    title.addEventListener("click", handlerClick)
+    title.addEventListener("click", handleClick)
 }
 init();
 
@@ -94,3 +94,25 @@ function handleOffline() {
     console.log("go");
 }
 window.addEventListener("offline", handleOffline);
+*/
+
+/* ---------- if-else function practice 2 ----------
+const title = document.querySelector("#title");
+const CLICKED_CLASS = "clicked";
+
+function handleClick(){
+    const hasClass = title.classList.contains(CLICKED_CLASS);
+    console.log(hasClass);   
+    if(!hasClass){
+        title.classList.add(CLICKED_CLASS);
+    } else {
+        title.classList.remove(CLICKED_CLASS);
+    }
+    // title.classList.toggle(CLICKED_CLASS);
+}
+
+function init(){
+    title.addEventListener("click", handleClick);
+}
+init();
+*/
