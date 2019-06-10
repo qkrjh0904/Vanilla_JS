@@ -31,5 +31,16 @@ console.log(myInfo);
 function sayHello(name, age){    //인자받기
     let s = "Hello " + name + ". Your age is " + age +".";  //인자 사용하기
     console.log(s);   //문자열 출력
+    console.log(`Hello ${name}. Your age is ${age}.`);
+    return `Hello ${name}. Your age is ${age}.`;
 }
-sayHello("Jeongho", 27);    //함수 호출후 인자 전달
+const greetJeongho = sayHello("Jeongho", 27);
+console.log(greetJeongho);    //함수 호출후 인자 전달
+
+const calculator = {
+    plus: function(a, b){
+        return a+b;
+    }
+}
+const plus = calculator.plus(5, 5)
+console.log(plus)
