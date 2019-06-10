@@ -27,3 +27,9 @@ const myInfo = {
 
 console.log(myInfo);
 */
+
+function sayHello(name, age){    //인자받기
+    let s = "Hello " + name + ". Your age is " + age +".";  //인자 사용하기
+    console.log(s);   //문자열 출력
+}
+sayHello("Jeongho", 27);    //함수 호출후 인자 전달
