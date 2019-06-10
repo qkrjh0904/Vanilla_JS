@@ -1,11 +1,14 @@
 // coment of JS
 /*comment of JS*/
-/*
+/* ---------- Data Type ----------
 const name = "jeongho";     //String
 const age = 27;             //const number
 let b = age-5;              //number
 const num = 11.1;           //const float num
-const yes_or_no = false;    //boolean
+const yesOrNo = false;    //boolean
 
-console.log(name, age, b, num, yes_or_no);
+console.log(name, age, b, num, yesOrNo);
 */
+const name = "Jeongho";
+const daysOfWeek = ["Mon","Tue", "Wed", "Thu", "Fri", "Sat", "Sun", name, true, 10, 10.1]; //지금과 같이 중간중간 구분으로 대문자를 넣는것을 camel space라고 한다. 낙타 등처럼.
+console.log(daysOfWeek);
