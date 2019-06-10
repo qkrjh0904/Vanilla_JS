@@ -54,9 +54,17 @@ title.innerHTML = "Hi! From JS";
 title.style.color = "red";
 console.dir(title);
 */
-
+/* ---------- Events and event handlers ----------
 const title = document.querySelector("#title");
 function handleClick(){
     title.style.color = "blue";
 }
 title.addEventListener("click", handleClick)
+*/
+
+const age = prompt("How old are you?")
+if(age>20) {
+    console.log("You can drink");
+} else {
+    console.log("You can't drink");
+}
