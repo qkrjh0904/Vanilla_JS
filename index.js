@@ -28,11 +28,12 @@ const myInfo = {
 console.log(myInfo);
 */
 
+/* ---------- Functions ----------
 function sayHello(name, age){    //인자받기
     let s = "Hello " + name + ". Your age is " + age +".";  //인자 사용하기
-    console.log(s);   //문자열 출력
-    console.log(`Hello ${name}. Your age is ${age}.`);
-    return `Hello ${name}. Your age is ${age}.`;
+    console.log(s);   //문자열 출력 표현 1
+    console.log(`Hello ${name}. Your age is ${age}.`);  //문자열 출력 표현 2
+    return `Hello ${name}. Your age is ${age}.`;    //문자열 출력 표현 3
 }
 const greetJeongho = sayHello("Jeongho", 27);
 console.log(greetJeongho);    //함수 호출후 인자 전달
@@ -44,3 +45,8 @@ const calculator = {
 }
 const plus = calculator.plus(5, 5)
 console.log(plus)
+*/
+
+
+const title = document.getElementById("title");
+title.innerHTML = "Hi! From JS";
