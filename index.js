@@ -47,9 +47,16 @@ const plus = calculator.plus(5, 5)
 console.log(plus)
 */
 
-
+/* ---------- Modifying the DOM with JS ----------
 //const title = document.getElementById("title");
 const title = document.querySelector("#title");
 title.innerHTML = "Hi! From JS";
 title.style.color = "red";
 console.dir(title);
+*/
+
+const title = document.querySelector("#title");
+function handleClick(){
+    title.style.color = "blue";
+}
+title.addEventListener("click", handleClick)
