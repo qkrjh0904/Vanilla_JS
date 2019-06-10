@@ -62,9 +62,35 @@ function handleClick(){
 title.addEventListener("click", handleClick)
 */
 
+/* ---------- if-else if-else ----------
 const age = prompt("How old are you?")
 if(age>20) {
     console.log("You can drink");
 } else {
     console.log("You can't drink");
 }
+*/
+
+
+const title = document.querySelector("#title");
+const BASE_COLOR = "rgb(52, 73, 94)";
+const OTHER_COLOR = "#7f8c8d";
+
+function handlerClick(){
+    const currentColor = title.style.color;
+    if(currentColor==BASE_COLOR){
+        title.style.color = OTHER_COLOR;
+    } else {
+        title.style.color = BASE_COLOR;
+    }
+}
+function init(){
+    title.style.color = BASE_COLOR;
+    title.addEventListener("click", handlerClick)
+}
+init();
+
+function handleOffline() {
+    console.log("go");
+}
+window.addEventListener("offline", handleOffline);
